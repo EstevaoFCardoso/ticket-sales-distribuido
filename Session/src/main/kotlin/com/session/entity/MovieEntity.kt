@@ -1,6 +1,6 @@
 package com.session.entity
 
-import com.session.dto.MovieDTO
+import com.session.controller.api.request.dto.MovieDTO
 import com.session.enums.GenreEnum
 import jakarta.persistence.*
 import lombok.Getter

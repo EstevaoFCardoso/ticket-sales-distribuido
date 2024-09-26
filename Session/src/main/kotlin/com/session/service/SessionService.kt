@@ -1,7 +1,7 @@
 package com.session.service
 
-import com.session.dto.SessionDTO
-import com.session.dto.toEntity
+import com.session.controller.api.request.dto.SessionDTO
+import com.session.controller.api.request.dto.toEntity
 import com.session.entity.SessionEntity
 import com.session.entity.toDTO
 import com.session.repository.SessionRepository

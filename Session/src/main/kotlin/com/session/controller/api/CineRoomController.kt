@@ -1,7 +1,6 @@
-package com.session.controller
+package com.session.controller.api
 
-import com.session.dto.CineRoomDTO
-import com.session.entity.CineRoomEntity
+import com.session.controller.api.request.dto.CineRoomDTO
 import com.session.service.CineRoomService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity

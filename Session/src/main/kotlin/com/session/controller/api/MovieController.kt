@@ -1,7 +1,8 @@
-package com.session.controller
+package com.session.controller.api
 
-import com.session.dto.MovieDTO
+import com.session.controller.api.request.dto.MovieDTO
 import com.session.service.MovieService
+import com.session.controller.api.error.ResourceNotFoundException
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.tags.Tag
 import org.springframework.http.HttpStatus
@@ -49,7 +50,7 @@ class MovieController(private val movieService: MovieService) {
         return if (movieService.deleteMovie(id)) {
             ResponseEntity.noContent().build()
         } else {
-            ResponseEntity.status(HttpStatus.NOT_FOUND).build()
+            throw ResourceNotFoundException("Recurso com ID $id não foi encontrado.")
         }
     }
 }

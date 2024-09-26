@@ -1,4 +1,4 @@
-package com.session.dto
+package com.session.controller.api.request.dto
 
 import com.session.entity.SeatSessionEntity
 

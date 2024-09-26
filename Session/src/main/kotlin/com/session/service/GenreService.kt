@@ -1,7 +1,7 @@
 package com.session.service
 
 import com.session.dto.GenreDTO
-import com.session.dto.toEntity
+import com.session.controller.api.request.dto.toEntity
 import com.session.entity.toDTO
 import com.session.repository.GenreRepository
 import jakarta.persistence.EntityNotFoundException

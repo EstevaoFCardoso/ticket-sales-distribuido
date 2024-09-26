@@ -1,7 +1,7 @@
 package com.session.service
 
-import com.session.dto.SeatDTO
-import com.session.dto.toEntity
+import com.session.controller.api.request.dto.SeatDTO
+import com.session.controller.api.request.dto.toEntity
 import com.session.entity.toDTO
 import com.session.repository.SeatRepository
 import jakarta.persistence.EntityNotFoundException

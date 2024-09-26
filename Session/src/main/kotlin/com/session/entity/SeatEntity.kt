@@ -1,6 +1,6 @@
 package com.session.entity
 
-import com.session.dto.SeatDTO
+import com.session.controller.api.request.dto.SeatDTO
 import jakarta.persistence.*
 import lombok.Getter
 import lombok.Setter
@@ -11,6 +11,7 @@ import java.io.Serializable
 @Entity
 @Table(name = "seat")
 class SeatEntity : Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long = 0

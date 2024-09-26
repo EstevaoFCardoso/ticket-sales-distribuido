@@ -1,7 +1,7 @@
 package com.session.repository
 
-import com.session.dto.MovieDTO
-import com.session.dto.toEntity
+import com.session.controller.api.request.dto.MovieDTO
+import com.session.controller.api.request.dto.toEntity
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test

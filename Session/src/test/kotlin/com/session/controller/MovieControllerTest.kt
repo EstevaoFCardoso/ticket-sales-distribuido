@@ -1,6 +1,7 @@
 package com.session.controller
 
-import com.session.dto.MovieDTO
+import com.session.controller.api.MovieController
+import com.session.controller.api.request.dto.MovieDTO
 import com.session.service.MovieService
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeEach

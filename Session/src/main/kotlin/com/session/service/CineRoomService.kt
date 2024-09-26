@@ -1,7 +1,7 @@
 package com.session.service
 
-import com.session.dto.CineRoomDTO
-import com.session.dto.toEntity
+import com.session.controller.api.request.dto.CineRoomDTO
+import com.session.controller.api.request.dto.toEntity
 import com.session.entity.CineRoomEntity
 import com.session.entity.toDTO
 import com.session.repository.CineRoomRepository

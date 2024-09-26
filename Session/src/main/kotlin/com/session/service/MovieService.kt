@@ -1,7 +1,7 @@
 package com.session.service
 
-import com.session.dto.MovieDTO
-import com.session.dto.toEntity
+import com.session.controller.api.request.dto.MovieDTO
+import com.session.controller.api.request.dto.toEntity
 import com.session.entity.toDTO
 import com.session.repository.MovieRepository
 import jakarta.persistence.EntityNotFoundException

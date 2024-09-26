@@ -1,6 +1,6 @@
-package com.session.controller
+package com.session.controller.api
 
-import com.session.dto.SessionDTO
+import com.session.controller.api.request.dto.SessionDTO
 import com.session.service.SessionService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity

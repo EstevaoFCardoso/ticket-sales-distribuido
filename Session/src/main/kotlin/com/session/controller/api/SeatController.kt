@@ -1,6 +1,6 @@
-package com.session.controller
+package com.session.controller.api
 
-import com.session.dto.SeatDTO
+import com.session.controller.api.request.dto.SeatDTO
 import com.session.service.SeatService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity

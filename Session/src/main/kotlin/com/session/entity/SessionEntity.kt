@@ -1,6 +1,6 @@
 package com.session.entity
 
-import com.session.dto.SessionDTO
+import com.session.controller.api.request.dto.SessionDTO
 import jakarta.persistence.*
 import lombok.Getter
 import lombok.Setter
@@ -17,9 +17,9 @@ class SessionEntity : Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long = 0
 
-    @ManyToOne
+    @OneToMany(fetch = FetchType.LAZY)
     @JoinColumn(name = "movie_id")
-    var idMovieEntity: Long? = null
+    var movieId: Long? = null
 
     @Column(name = "start_time")
     var startSession: LocalDateTime? = null
@@ -36,12 +36,10 @@ class SessionEntity : Serializable {
 
 fun SessionEntity.toDTO(): SessionDTO {
     return SessionDTO(
-        movieId = this.idMovieEntity,
+        movieId = this.movieId,
         startSession = this.startSession,
         endRangeTime = endRangeTime,
         initRangeTime = initRangeTime,
         endSession = endSession
-
-
     )
 }

@@ -1,6 +1,6 @@
-package com.session.controller
+package com.session.controller.api
 
-import com.session.dto.SeatSessionDTO
+import com.session.controller.api.request.dto.SeatSessionDTO
 import com.session.entity.SeatSessionEntity
 import com.session.entity.toDTO
 import com.session.service.SeatSessionService
